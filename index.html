@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elbrazily Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I'am ahmed farag, Frontend Developer ,This is my portfolio">
+    <meta name="keywords" content="Profile, Portfolio, html, css, javascript, jquery, bootstrap, sass, responsive design, front-end">
+    <meta name="theme-color" content="#1b1b22" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Start Page Loading -->
+    <div class="page-loader">
+        <div class="page-loader-inner">
+            <div class="circle"></div>
+            Loading
+        </div>
+    </div>
+    <!-- End Page Loading -->
+
+    <!-- Start Color Switcher -->
+    <div class="color-switcher">
+        <div class="switcher-btn">
+            <i class="fa fa-cog"></i>
+        </div>
+        <h3>Select Color</h3>
+        <div class="theme-buttons-conatiners">
+            <span class="theme-buttons active" data-color="#e98b2c" style="background: #e98b2c;"></span>
+            <span class="theme-buttons" data-color="#e74c3c" style="background: #e74c3c;"></span>
+            <span class="theme-buttons" data-color="#009ec6" style="background: #009ec6;"></span>
+            <span class="theme-buttons" data-color="#27ae60" style="background: #27ae60;"></span>
+        </div>
+    </div>
+    <!-- End Color Switcher -->
+
+    <!-- Start Bg Animation Effect -->
+    <div class="bg-animation-effect"></div>
+    <!-- ../End Bg Animation Effect -->
+
+    <!-- Start Overlay Effect -->
+    <div class="overlay-effect">
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+    </div>
+    <!-- End Overlay Effect -->
+
+    <!-- Start Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row flex-end">
+                <button type="button" title="toggle" class="nav-toggler">
+                    <span></span>
+                </button>
+                <!-- Start Nav -->
+                <nav class="nav">
+                    <div class="nav-inner">
+                        <ul>
+                            <li>
+                                <a href="#about" class="nav-item link-item">about</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="nav-item link-item">portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#features" class="nav-item link-item">features</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="nav-item link-item">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- End Nav -->
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+
+    <!-- Start About section -->
+    <section class="about-section active" id="about">
+        <div class="container">
+            <div class="row min-vh-100">
+                <div class="about__content">
+                    <div class="profile">
+                        <img src="img/profile1.jpg" alt="profile-img">
+                        <p class="preview_img" alt="preview img" title="Preview Full Img"><i class="fas fa-user"></i></p>
+                    </div>
+
+                    <h1 class="content_title">Hi, My name is Ahmed Farag.</h1>
+                    <p class="content_desc">I'm a <span>Frontend developer,</span> living in Beni suef, Egypt. I make web applications using <span>html</span>, <span>css</span>, <span>javascript</span> and <span>bootstrap</span>. Check my latest work on the
+                        <a href="#portfolio" class="link-item">portfolio page</a>. want talk about a project? you can get in touch with me <a href="#contact" class="link-item">here</a>.
+                    </p>
+                    <h2>skills</h2>
+                    <div class="skills">
+                        <div class="skills-item">
+                            <span>html</span>
+                            <img src="img/icons/html-svgrepo-com.svg" alt="html">
+                        </div>
+                        <div class="skills-item">
+                            <span>css</span>
+                            <img src="img/icons/css-svgrepo-com.svg" alt="css">
+                        </div>
+                        <div class="skills-item">
+                            <span>javascript</span>
+                            <img src="img/icons/js-svgrepo-com.svg" alt="javascript">
+                        </div>
+                        <div class="skills-item">
+                            <span>bootstrap</span>
+                            <img src="img/icons/bootstrap-4-logo-svgrepo-com.svg" alt="bootstrap">
+                        </div>
+                        <div class="skills-item">
+                            <span>jquery</span>
+                            <img src="img/icons/jquery-icon.svg" alt="jquery">
+                        </div>
+                        <div class="skills-item">
+                            <span>sass</span>
+                            <img src="img/icons/sass-svgrepo-com.svg" alt="sass">
+                        </div>
+                        <div class="skills-item">
+                            <span>Github</span>
+                            <img src="img/icons/github-svgrepo-com.svg" alt="github">
+                        </div>
+                        <div class="skills-item">
+                            <span>git</span>
+                            <img src="img/icons/git-svgrepo-com.svg" alt="git">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ../End About section -->
+
+
+    <!-- popup for preview Img -->
+    <div class="container">
+        <div class="preview_full-img ">
+            <img src="img/profile1.jpg" alt="profile full img">
+            <a class="close-btn close_profile" href="#"></a>
+        </div>
+    </div>
+    <!-- popup for preview Img -->
+
+    <!-- Start Portfolio Section -->
+    <section class="portfolio-section sec-padding" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>recent works</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-filter">
+                    <button type="button" title="Show All Works" class="portfolio-filter-btn active" data-filter="all">all</button>
+                    <button type="button" title="Filter by Html-Css" class="portfolio-filter-btn" data-filter="html-css">html-css</button>
+                    <button type="button" title="Filter by Api" class="portfolio-filter-btn" data-filter="api">api</button>
+                    <button type="button" title="Filter by Bootstrap" class="portfolio-filter-btn" data-filter="bootstrap">bootstrap</button>
+                    <button type="button" title="Filter by challenges" class="portfolio-filter-btn" data-filter="challenges">challenges</button>
+                </div>
+                <div class="filter-status">
+                    <p></p>
+                </div>
+            </div>
+            <div class="row portfolio-items">
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="html-css">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/1.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">education course website</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore soluta porro. Rem, beatae asperiores. Quis unde a est, eveniet sequi itaque et architecto, tenetur voluptates veniam delectus ratione porro harum omnis fuga.
+                                Quod illo earum provident officiis, atque eveniet commodi praesentium totam exercitationem molestiae nam sapiente maxime expedita neque?</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>4 Dec 2020</span></p>
+                            <p>Technologies Used - <span>Html, Css</span></p>
+                            <p>Role - <span>html-css</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/courses-website/" target="_blank">courses-website</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/courses-website" target="_blank">courses-website</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="bootstrap">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/5.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Restaurant website</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore soluta porro. Rem, beatae asperiores. Quis unde a est, eveniet sequi itaque et architecto, tenetur voluptates veniam delectus ratione porro harum omnis fuga.
+                                Quod illo earum provident officiis, atque eveniet commodi praesentium totam exercitationem molestiae nam sapiente maxime expedita neque?</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>4 Dec 2020</span></p>
+                            <p>Technologies Used - <span>Html, Css, Javascript, Jquery, Bootstrap</span></p>
+                            <p>Role - <span>Bootstrap</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/BrazilianFood/" target="_blank">BrazilianFood</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/BrazilianFood" target="_blank">BrazilianFood</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="challenges,api">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/10.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Rest Countries API</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>This is challenge in frontend mentor website it is a rest countries api with color theme switcher</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>6 Feb 2022</span></p>
+                            <p>Technologies Used - <span>Html, Css, Javascript, scss, API</span></p>
+                            <p>Role - <span>Challenges</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/rest-countries/" target="_blank">Rest Countries</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/rest-countries" target="_blank">Rest Countries</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="html-css">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/2.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Construction website</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore soluta porro. Rem, beatae asperiores. Quis unde a est, eveniet sequi itaque et architecto, tenetur voluptates veniam delectus ratione porro harum omnis fuga.
+                                Quod illo earum provident officiis, atque eveniet commodi praesentium totam exercitationem molestiae nam sapiente maxime expedita neque?</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>4 Dec 2020</span></p>
+                            <p>Technologies Used - <span>Html, Css, Javascript</span></p>
+                            <p>Role - <span>html-css</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/construction/" target="_blank">Construction</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/construction" target="_blank">Construction</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="html-css">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/7.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Agency Landing page</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore soluta porro. Rem, beatae asperiores. Quis unde a est, eveniet sequi itaque et architecto, tenetur voluptates veniam delectus ratione porro harum omnis fuga.
+                                Quod illo earum provident officiis, atque eveniet commodi praesentium totam exercitationem molestiae nam sapiente maxime expedita neque?</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>4 Dec 2020</span></p>
+                            <p>Technologies Used - <span>Html, Css, Javascript</span></p>
+                            <p>Role - <span>html-css</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/Agency-ar/" target="_blank">Agency-ar</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/Agency-ar" target="_blank">Agency-ar</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="api">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/3.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Weather App</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore soluta porro. Rem, beatae asperiores. Quis unde a est, eveniet sequi itaque et architecto, tenetur voluptates veniam delectus ratione porro harum omnis fuga.
+                                Quod illo earum provident officiis, atque eveniet commodi praesentium totam exercitationem molestiae nam sapiente maxime expedita neque?</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>4 Dec 2020</span></p>
+                            <p>Technologies Used - <span>Html, Css, API</span></p>
+                            <p>Role - <span>Api</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/weather.api/" target="_blank">weather.api</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/weather.api" target="_blank">weather.api</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="html-css,bootstrap">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/4.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">App Landing Page</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore soluta porro. Rem, beatae asperiores. Quis unde a est, eveniet sequi itaque et architecto, tenetur voluptates veniam delectus ratione porro harum omnis fuga.
+                                Quod illo earum provident officiis, atque eveniet commodi praesentium totam exercitationem molestiae nam sapiente maxime expedita neque?</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>4 Dec 2020</span></p>
+                            <p>Technologies Used - <span>Html, Css, Bootstrap 4</span></p>
+                            <p>Role - <span>Bootstrap</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/App-Landing-page/" target="_blank">App-Landing-page</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/App-Landing-page" target="_blank">App-Landing-page</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="challenges">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/6.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Apparel Coming soon</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore soluta porro. Rem, beatae asperiores. Quis unde a est, eveniet sequi itaque et architecto, tenetur voluptates veniam delectus ratione porro harum omnis fuga.
+                                Quod illo earum provident officiis, atque eveniet commodi praesentium totam exercitationem molestiae nam sapiente maxime expedita neque?</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>6 Feb 2022</span></p>
+                            <p>Technologies Used - <span>Html, Css, Javascript</span></p>
+                            <p>Role - <span>Challenges</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/apparel-coming-soon/" target="_blank">apparel-coming-soon</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/apparel-coming-soon" target="_blank">apparel-coming-soon</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="challenges">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/8.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Sunnyside landing page</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore soluta porro. Rem, beatae asperiores. Quis unde a est, eveniet sequi itaque et architecto, tenetur voluptates veniam delectus ratione porro harum omnis fuga.
+                                Quod illo earum provident officiis, atque eveniet commodi praesentium totam exercitationem molestiae nam sapiente maxime expedita neque?</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>22 Jan 2022</span></p>
+                            <p>Technologies Used - <span>Html, Css, Javascript</span></p>
+                            <p>Role - <span>Challenges</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/Sunnyside/" target="_blank">Sunnyside</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/Sunnyside" target="_blank">Sunnyside</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+
+                <!-- Start portfolio items -->
+                <div class="portfolio-item" data-category="challenges,api">
+                    <div class="portfolio-item-thumbail">
+                        <img src="img/portfolio/9.jpg" alt="thumbail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Advice Generator App</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore soluta porro. Rem, beatae asperiores. Quis unde a est, eveniet sequi itaque et architecto, tenetur voluptates veniam delectus ratione porro harum omnis fuga.
+                                Quod illo earum provident officiis, atque eveniet commodi praesentium totam exercitationem molestiae nam sapiente maxime expedita neque?</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created- <span>22 Jan 2022</span></p>
+                            <p>Technologies Used - <span>Html, Css, Javascript, API</span></p>
+                            <p>Role - <span>Challenges, API</span></p>
+                            <p>View Live - <span><a href="https://ahmedfarag18.github.io/advice-generator-app/" target="_blank">Advice App</a></span></p>
+                            <p>Source Code - <span><a href="https://github.com/AhmedFarag18/advice-generator-app" target="_blank">Advice App</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End portfolio items -->
+            </div>
+        </div>
+    </section>
+    <!-- ../End Portfolio Section -->
+
+    <section class="features-section sec-padding " id="features">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>My Features</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="features-item">
+                    <i class="fas fa-code fa-2x"></i>
+                    <h3>Clean Code</h3>
+                    <p>I Will make code that is easy to understand and easy to change.</p>
+                </div>
+
+                <div class="features-item">
+                    <i class="far fa-star fa-2x"></i>
+                    <h3>High Quality</h3>
+                    <p>You will receive a website with high performance and high quality.</p>
+                </div>
+
+
+                <div class="features-item">
+                    <i class="fas fa-mobile-alt fa-2x"></i>
+                    <h3>Responsive Deign</h3>
+                    <p>create a single site to support many devices, but need to consider content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Contact Section -->
+    <section class="contact-section sec-padding  min-vh-100" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Contact me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sed nemo temporibus nulla debitis quia sint cum, laudantium iusto ab at magnam, ratione quod iste. Fugit soluta quos officia expedita.</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <p>Email me on <span>ahmedfaragfdfdfd@gmail.com</span></p>
+                    </div>
+                    <div class="contact-info-item">
+                        <p class="social-links">
+                            <span>Find me on</span>
+                            <a href="https://www.facebook.com/ahmedf.elbrazily/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/elbrazily2122/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/AhmedFarag18" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-farag-395702199/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </p>
+                    </div>
+                    <button type="button" class="btn toggle-contact-form-btn">send message</button>
+                </div>
+
+
+                <!-- Start Conatct Form -->
+                <div class="contact-form">
+                    <div id="form_alerts" class="form_alerts"></div>
+
+                    <div class="contact-form-inner">
+                        <div class="contact-form-container">
+                            <button type="button" class="close-btn toggle-contact-form-btn"></button>
+
+                            <form name="google-sheet">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <input type="text" name="name" placeholder="Your Name" class="input-control" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="email" name="email" placeholder="Your Email" class="input-control" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" name="subject" placeholder="Subject" class="input-control">
+                                    </div>
+                                    <div class="input-group">
+                                        <textarea placeholder="Message" name="message" class="input-control" required></textarea>
+                                    </div>
+                                    <div class="input-group">
+                                        <button type="submit" class="btn btn-submit">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- ../End Conatct Form -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ../End Contact Section -->
+
+    <!-- Start Portfolio Item Details Popup -->
+    <div class="portfolio-popup">
+        <div class="pp-overlay"></div>
+        <div class="pp-inner">
+            <div class="pp-content">
+                <div class="pp-header">
+                    <h2 class="pp-counter">
+                        7 of 7 ( <span>all</span> )
+                    </h2>
+                    <button type="button" title="close" class="close-btn pp-close-btn"></button>
+                    <div class="pp-thumbnail">
+                        <img src="img/portfolio/7.jpg" alt="pp-thumbnail">
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="pp-body">
+                </div>
+                <div class="pp-footer">
+                    <div class="pp-footer-left hidden">
+                        <button type="button" title="Prev Work" class="btn pp-prev-btn"><i class="fas fa-arrow-left"></i></button>
+                        <h3></h3>
+                        <img src="img/portfolio/1.jpg" alt="prev work thumbnail">
+                    </div>
+                    <div class="pp-footer-right hidden">
+                        <button type="button" title="Next Work" class="btn pp-next-btn"><i class="fas fa-arrow-right"></i></button>
+                        <h3></h3>
+                        <img src="img/portfolio/2.jpg" alt="next work thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ../End Portfolio Item Details Popup -->
+
+    <!-- Start cursor -->
+    <div class="cursor_parent">
+        <div class="cursor1"></div>
+        <div class="cursor2"></div>
+    </div>
+    <!-- End cursor -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
