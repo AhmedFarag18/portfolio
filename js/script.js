@@ -8,9 +8,6 @@ window.addEventListener("load", () => {
 });
 
 
-
-
-
 /*======================= Bg Animation Effect ===========*/
 function bgAnimationItems() {
     const rows = 7,
@@ -24,7 +21,6 @@ function bgAnimationItems() {
     }
 }
 bgAnimationItems();
-
 
 
 /*================= Toggle Navbar ================*/
@@ -45,11 +41,9 @@ let btnCloseen = document.querySelector(".close_profile");
 
 previewBtn.addEventListener("click", () => {
     profileImg.classList.add("show");
-    toggleBodyScrolling();
 });
 btnCloseen.addEventListener("click", () => {
     profileImg.classList.remove("show");
-    toggleBodyScrolling();
 });
 
 
@@ -290,11 +284,49 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
+
             FormAlert.innerHTML = `<div class="alert alert-success">Message Send Successfully</div>`;
             document.querySelector(".alert").style.top = "15px";
+            setTimeout(() => {
+                document.querySelector(".alert").style.top = "-150px";
+            }, 2000);
         })
         .catch(error => {
             FormAlert.innerHTML = `<div class="alert alert-danger">Message Not Sent</div>`
             document.querySelector(".alert").style.top = "15px";
+            setTimeout(() => {
+                document.querySelector(".alert").style.top = "-150px";
+            }, 2000);
         });
 });
+
+
+/*======================== Make Glass Effect ======================================*/
+let glassCheckbox = document.querySelector(".glass-toggle");
+let glassStyle = document.querySelector(".js-glass-style");
+
+glassCheckbox.addEventListener("click", () => {
+    if (glassCheckbox.classList.contains("active")) {
+        glassCheckbox.classList.remove("active");
+        localStorage.setItem("glass-effect", "false");
+        glassStyle.disabled = true;
+    } else {
+        glassCheckbox.classList.add("active");
+        localStorage.setItem("glass-effect", "true");
+        glassStyle.disabled = false;
+    }
+});
+
+// check if glass checked in localstorage
+if (localStorage.getItem("glass-effect") !== null) {
+    if (localStorage.getItem("glass-effect") === "true") {
+
+        glassCheckbox.classList.add("active");
+        glassStyle.disabled = false;
+        localStorage.setItem("glass-effect", "true");
+    } else {
+        glassCheckbox.classList.remove("active");
+        glassStyle.disabled = true;
+        localStorage.setItem("glass-effect", "false");
+    }
+}

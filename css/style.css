@@ -250,20 +250,25 @@ button {
     z-index: 9999;
 }
 
-main:hover~.cursor1 {
+
+/* .main:hover~.cursor1 {
     transform: translate(-50%, -50%) scale(1.5);
     background-color: #c6c6c6;
     opacity: .5;
 }
 
-main:hover~.cursor2 {
+.main:hover~.cursor2 {
     opacity: 0;
-}
+} */
 
 
 /* ---------------------------
 Switcher Color
 ------------------------------ */
+
+.color-switcher {
+    height: auto;
+}
 
 .color-switcher h3 {
     color: var(--main-color);
@@ -279,7 +284,7 @@ Switcher Color
     color: var(--main-color);
     top: 0px;
     right: 200px;
-    background-color: #d5d5d5;
+    background-color: var(--dark-light);
     padding: 10px 15px;
     font-size: 20px;
     cursor: pointer;
@@ -303,7 +308,7 @@ Switcher Color
     right: -200px;
     width: 200px;
     padding: 10px;
-    background: #d5d5d5;
+    background: var(--dark-light);
     z-index: 1000;
     transition: all .5s;
     /* box-shadow: 0 0 10px 2px #ddd; */
@@ -320,11 +325,11 @@ Switcher Color
 }
 
 .theme-buttons {
-    width: calc(100% / 2);
-    height: 40px;
-    width: 40px;
+    width: calc(100% / 4 - 10px);
+    height: 35px;
+    width: 35px;
     border-radius: 50px;
-    /* margin: 5px; */
+    margin: 5px;
     cursor: pointer;
     opacity: .5;
 }
@@ -332,6 +337,59 @@ Switcher Color
 .color-switcher .theme-buttons.active {
     opacity: 1;
     border: 3px solid #fff;
+}
+
+
+/* ======glass toggle */
+
+.setting-option {
+    padding: 20px 0;
+}
+
+.border-b {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.glass-toggle {
+    width: 60px;
+    height: 30px;
+    border: 2px solid var(--white-light);
+    background-color: transparent;
+    border-radius: 30px;
+    position: relative;
+}
+
+.glass-btn {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    background-color: var(--main-color);
+    transition: .3s;
+}
+
+.glass .text {
+    color: var(--white);
+}
+
+.glass-toggle.active {
+    background-color: var(--white-light);
+}
+
+.glass-toggle.active .glass-btn {
+    left: 32px;
+    transition: .3s;
 }
 
 
@@ -757,8 +815,8 @@ About Section
 
 .preview_full-img {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 50%;
     transform: translateX(-50%) scale(0);
@@ -817,7 +875,7 @@ a.close_profile {
 .about__content .content_desc a::before {
     content: "";
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: 0;
     height: 1px;
     width: 0%;
@@ -827,6 +885,8 @@ a.close_profile {
 
 .about__content .content_desc a:hover::before {
     width: 100%;
+    left: 0px;
+    right: auto;
 }
 
 .about__content h2 {
@@ -1241,8 +1301,26 @@ Features Section
     transition: all .5s ease;
 }
 
+.features-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--main-color);
+    width: 0;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
 .features-item:hover {
     box-shadow: 8px 8px 7px 0px #0000005c;
+}
+
+.features-item:hover::before {
+    right: auto;
+    left: 0;
+    width: 100%;
 }
 
 .features-item i {
