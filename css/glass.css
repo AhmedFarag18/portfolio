@@ -5,6 +5,11 @@
     --decoration-bg-2: rgb(104 147 240);
     --BLACK: rgba(0, 0, 0, 0.8);
     --black-bg: rgb(235, 225, 225);
+    --glass-bg: hsla(0, 0%, 100%, 0.05);
+    --border-color-2: hsla(0, 0%, 100%, 0.07);
+    --border-color-1: hsla(0, 0%, 100%, 0.15);
+    --shadow: none;
+    --backdrop-filter-blur: blur(5px);
 }
 
 html::after,
@@ -32,13 +37,22 @@ html::after {
 }
 
 body {
-    --glass-bg: hsla(0, 0%, 100%, 0.05);
-    --border-color-2: hsla(0, 0%, 100%, 0.07);
-    --border-color-1: hsla(0, 0%, 100%, 0.15);
-    --shadow: none;
     background-image: linear-gradient(to right, var(--body-gradient-bg-color-1), var(--body-gradient-bg-color-2));
     background-attachment: fixed;
     padding: 40px 10px;
+}
+
+body.light {
+    --body-gradient-bg-color-1: rgb(242 242 242);
+    --body-gradient-bg-color-2: rgb(240 240 240);
+    --decoration-bg-1: var(--main-color);
+    --decoration-bg-2: rgb(104 147 240);
+    --BLACK: rgb(255 255 255 / 0%);
+    --black-bg: rgb(255 255 255);
+    --glass-bg: hsl(0deg 0% 0% / 7%);
+    --border-color-2: hsl(0deg 0% 100% / 55%);
+    --border-color-1: hsl(0deg 0% 100% / 46%);
+    --shadow: none;
     --backdrop-filter-blur: blur(5px);
 }
 

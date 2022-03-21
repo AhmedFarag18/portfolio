@@ -16,6 +16,14 @@ varabiles
     --white-light: #c8c8c8;
 }
 
+body.light {
+    --main-color: #e98b2c;
+    --dark: #ddd;
+    --dark-light: #c8c8c8;
+    --white: #1b1b1b;
+    --white-light: #32323a;
+}
+
 
 /* ========================
 Global styles
@@ -283,7 +291,7 @@ Switcher Color
     position: absolute;
     color: var(--main-color);
     top: 0px;
-    right: 200px;
+    right: 240px;
     background-color: var(--dark-light);
     padding: 10px 15px;
     font-size: 20px;
@@ -305,8 +313,8 @@ Switcher Color
 .color-switcher {
     position: fixed;
     top: 25%;
-    right: -200px;
-    width: 200px;
+    right: -240px;
+    width: 240px;
     padding: 10px;
     background: var(--dark-light);
     z-index: 1000;
@@ -340,7 +348,7 @@ Switcher Color
 }
 
 
-/* ======glass toggle */
+/* ======custom toggle */
 
 .setting-option {
     padding: 20px 0;
@@ -350,14 +358,14 @@ Switcher Color
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.glass {
+.custom {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
+    justify-content: space-around;
 }
 
-.glass-toggle {
+.custom-toggle {
     width: 60px;
     height: 30px;
     border: 2px solid var(--white-light);
@@ -366,7 +374,7 @@ Switcher Color
     position: relative;
 }
 
-.glass-btn {
+.custom-btn {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -379,15 +387,15 @@ Switcher Color
     transition: .3s;
 }
 
-.glass .text {
+.custom .text {
     color: var(--white);
 }
 
-.glass-toggle.active {
+.custom-toggle.active {
     background-color: var(--white-light);
 }
 
-.glass-toggle.active .glass-btn {
+.custom-toggle.active .custom-btn {
     left: 32px;
     transition: .3s;
 }
@@ -830,7 +838,8 @@ About Section
 a.close_profile {
     top: 5%;
     left: 90%;
-    padding: 5px 15px;
+    padding: 10px 20px;
+    border-radius: 0;
 }
 
 .preview_full-img.show {
@@ -863,7 +872,7 @@ a.close_profile {
 .about__content .content_desc span {
     font-weight: bold;
     text-transform: capitalize;
-    color: #ddd;
+    color: var(--white-light);
 }
 
 .about__content .content_desc a {
@@ -1306,7 +1315,7 @@ Features Section
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: -1;
+    /* z-index: -1; */
     background-color: var(--main-color);
     width: 0;
     height: 3px;
@@ -1314,7 +1323,7 @@ Features Section
 }
 
 .features-item:hover {
-    box-shadow: 8px 8px 7px 0px #0000005c;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
 .features-item:hover::before {

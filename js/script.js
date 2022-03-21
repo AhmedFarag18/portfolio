@@ -253,21 +253,23 @@ btns.forEach((item) => {
         // Add Active Class To current Element
         e.currentTarget.classList.add("active");
         // Add color to Local Storage
-        window.localStorage.setItem("color", e.currentTarget.dataset.color);
+        window.localStorage.setItem("portfolio-color", e.currentTarget.dataset.color);
         // change main color
         root.style.setProperty('--main-color', e.currentTarget.dataset.color);
+        document.body.style.setProperty('--main-color', e.currentTarget.dataset.color);
     });
 });
 /*=============== Check Local Storage ===============*/
-if (window.localStorage.getItem("color")) {
+if (window.localStorage.getItem("portfolio-color")) {
     // [1] Add Main color to page
-    root.style.setProperty('--main-color', window.localStorage.getItem("color"));
+    root.style.setProperty('--main-color', window.localStorage.getItem("portfolio-color"));
+    document.body.style.setProperty('--main-color', window.localStorage.getItem("portfolio-color"));
     // [2] Remove active class From All items
     btns.forEach((item) => {
         item.classList.remove("active");
     });
     // [3] Add active class to current color
-    document.querySelector(`[data-color="${window.localStorage.getItem("color")}"]`).classList.add("active");
+    document.querySelector(`[data-color="${window.localStorage.getItem("portfolio-color")}"]`).classList.add("active");
 }
 
 
@@ -317,6 +319,7 @@ glassCheckbox.addEventListener("click", () => {
     }
 });
 
+
 // check if glass checked in localstorage
 if (localStorage.getItem("glass-effect") !== null) {
     if (localStorage.getItem("glass-effect") === "true") {
@@ -328,5 +331,42 @@ if (localStorage.getItem("glass-effect") !== null) {
         glassCheckbox.classList.remove("active");
         glassStyle.disabled = true;
         localStorage.setItem("glass-effect", "false");
+    }
+}
+
+/*=====================================
+light & Dark mode 
+======================================*/
+
+let lightCheckbox = document.querySelector(".light-toggle");
+let lightStyle = document.querySelector(".js-light-style");
+
+lightCheckbox.addEventListener("click", function() {
+    if (lightCheckbox.classList.contains("active")) {
+        lightStyle.classList.remove("light");
+        lightCheckbox.classList.remove("active");
+        localStorage.setItem("light-effect", "false");
+
+    } else {
+        lightStyle.classList.add("light");
+        lightCheckbox.classList.add("active");
+        localStorage.setItem("light-effect", "true");
+
+    }
+});
+
+
+
+
+// check if light checked in localstorage
+if (localStorage.getItem("light-effect") !== null) {
+    if (localStorage.getItem("light-effect") === "true") {
+        lightStyle.classList.add("light");
+        lightCheckbox.classList.add("active");
+        localStorage.setItem("light-effect", "true");
+    } else {
+        lightStyle.classList.remove("light");
+        lightCheckbox.classList.remove("active");
+        localStorage.setItem("light-effect", "false");
     }
 }
