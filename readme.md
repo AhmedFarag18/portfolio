@@ -7,4 +7,12 @@
 
 Thanks for checking out my portfolio.
 
+### Live Preview:
+https://ahmedfarag18.github.io/portfolio/
+<br>
+or
+<br>
+https://portfolio-blue-phi.vercel.app/
+
+
 **Have fun building!** 🚀
