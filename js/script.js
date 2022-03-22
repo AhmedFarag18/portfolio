@@ -1,7 +1,9 @@
+let portfolioItems;
+
+
 window.addEventListener("load", () => {
     /*-----------------  Page Loader ----------------*/
     document.querySelector(".page-loader").classList.add("slide-out-right");
-
     setTimeout(() => {
         document.querySelector(".page-loader").style.display = "none";
     }, 1000);
@@ -21,6 +23,8 @@ function bgAnimationItems() {
     }
 }
 bgAnimationItems();
+
+
 
 
 /*================= Toggle Navbar ================*/
@@ -53,6 +57,7 @@ btnCloseen.addEventListener("click", () => {
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("link-item") && e.target.hash !== "") {
         const hash = e.target.hash;
+
         if (e.target.classList.contains("nav-item")) {
             activeSection(hash);
             toggleNavbar();
@@ -90,7 +95,6 @@ function toggleBodyScrolling() {
 
 /* ============= Filter Portfolio Items =======================*/
 const filterBtnsContainer = document.querySelector(".portfolio-filter");
-let portfolioItems;
 
 filterBtnsContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("portfolio-filter-btn") && !e.target.classList.contains("active")) {
@@ -370,3 +374,48 @@ if (localStorage.getItem("light-effect") !== null) {
         localStorage.setItem("light-effect", "false");
     }
 }
+
+/*---------------- Show All Projects And Add Data From Json File ---------------------*/
+
+function showProjects(data) {
+    document.querySelector(".portfolio-items").innerHTML = "";
+    for (let i = 0; i < data.length; i++) {
+        document.querySelector(".portfolio-items").innerHTML += `
+                <!-- Start portfolio items -->
+                    <div class="portfolio-item show" data-category="${data[i].category}">
+                        <div class="portfolio-item-thumbail">
+                            <img src="${data[i].img}" alt="thumbail">
+                            <button type="button" class="btn more-info-btn">more info</button>
+                        </div>
+                        <h3 class="portfolio-item-title">${data[i].title}</h3>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                            ${data[i].description}
+                            </div>
+                            <div class="general-info">
+                                <p>Created- <span>${data[i].date_Created}</span></p>
+                                <p>Technologies Used - <span>${data[i].technologies}</span></p>
+                                <p>Role - <span>${data[i].role}</span></p>
+                                <p>View Live - <span><a href="${data[i].live}" target="_blank">${data[i].link_Name}</a></span></p>
+                                <p>Source Code - <span><a href="${data[i].code}" target="_blank">${data[i].link_Name}</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                <!-- ../End portfolio items -->
+            `;
+    }
+    portfolioItems = document.querySelectorAll(".portfolio-item.show");
+}
+
+/*--------------------- Load Projects Details From Json File ---------------------*/
+function getAllProjects() {
+    fetch("projects.json")
+        .then(response => response.json())
+        .then(data => {
+            showProjects(data);
+        })
+        .catch(err => {
+            console.log(err);
+        });
+}
+getAllProjects();

@@ -1,0 +1,113 @@
+[{
+        "category": "html-css",
+        "img": "img/portfolio/1.jpg",
+        "title": "education course website",
+        "description": "<p>This is Template For show Courses and What does The courese Center offer, It's Fully responsive website.</p>",
+        "date_Created": "4 Dec 2020",
+        "technologies": "Html, Css",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/courses-website/",
+        "code": "https://github.com/AhmedFarag18/courses-website",
+        "link_Name": "courses-website"
+    },
+    {
+        "category": "bootstrap",
+        "img": "img/portfolio/5.jpg",
+        "title": "Restaurant website",
+        "description": "<p>This is Restaurant Landing page For Show some products and features for The Restaurant, It's Fully responsive Website.</p>",
+        "date_Created": "21 Dec 2020",
+        "technologies": "Html, Css, Javascript, Jquery, Bootstrap",
+        "role": "Bootstrap",
+        "live": "https://ahmedfarag18.github.io/BrazilianFood/",
+        "code": "https://github.com/AhmedFarag18/BrazilianFood",
+        "link_Name": "BrazilianFood"
+    }, {
+        "category": "challenges,api",
+        "img": "img/portfolio/10.jpg",
+        "title": "Rest Countries API",
+        "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a rest countries api with color theme switcher</p>",
+        "date_Created": "6 Feb 2022",
+        "technologies": "Html, Css, Javascript, scss, API",
+        "role": "Challenges",
+        "live": "https://ahmedfarag18.github.io/rest-countries/",
+        "code": "https://github.com/AhmedFarag18/rest-countries",
+        "link_Name": "Rest Countries"
+    }, {
+        "category": "html-css",
+        "img": "img/portfolio/2.jpg",
+        "title": "Construction website",
+        "description": "<p>This is a website for a construction company, Website have 5 pages and Its fully Responsive.</p>",
+        "date_Created": "12 Oct 2020",
+        "technologies": "Html, Css, Javascript",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/construction/",
+        "code": "https://github.com/AhmedFarag18/construction",
+        "link_Name": "Construction"
+    }, {
+        "category": "html-css",
+        "img": "img/portfolio/7.jpg",
+        "title": "Agency Landing page",
+        "description": "<p>This is Arabic Landing Page For Agency, and Its fully Responsive.</p>",
+        "date_Created": "15 Feb 2021",
+        "technologies": "Html, Css, Javascript",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/Agency-ar/",
+        "code": "https://github.com/AhmedFarag18/Agency-ar",
+        "link_Name": "Agency-ar"
+    }, {
+        "category": "api",
+        "img": "img/portfolio/3.jpg",
+        "title": "Weather App",
+        "description": "<p>This is Weather App show weather for 3 days in the Place you Need, and it's Fully Responsive.</p>",
+        "date_Created": "9 Mar 2021",
+        "technologies": "Html, Css, API",
+        "role": "Api",
+        "live": "https://ahmedfarag18.github.io/weather.api/",
+        "code": "https://github.com/AhmedFarag18/weather.api",
+        "link_Name": "Weather"
+    }, {
+        "category": "html-css,bootstrap",
+        "img": "img/portfolio/4.jpg",
+        "title": "App Landing Page",
+        "description": "<p>This is landing page for new App can show Feature of This App, It's maked by Bootstrap and It's Fully Responsive.</p>",
+        "date_Created": "24 Mar 2021",
+        "technologies": "Html, Css, Bootstrap 4",
+        "role": "Bootstrap",
+        "live": "https://ahmedfarag18.github.io/App-Landing-page/",
+        "code": "https://github.com/AhmedFarag18/App-Landing-page",
+        "link_Name": "App-Landing-page"
+    }, {
+        "category": "challenges",
+        "img": "img/portfolio/6.jpg",
+        "title": "Apparel Coming soon",
+        "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a Apparel coming soon page.</p>",
+        "date_Created": "6 Feb 2022",
+        "technologies": "Html, Css, Javascript",
+        "role": "Challenges",
+        "live": "https://ahmedfarag18.github.io/apparel-coming-soon/",
+        "code": "https://github.com/AhmedFarag18/apparel-coming-soon",
+        "link_Name": "apparel-coming-soon"
+    }, {
+        "category": "html-css,challenges",
+        "img": "img/portfolio/8.jpg",
+        "title": "Sunnyside landing page",
+        "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a Sunnyside Landing page and It's fully responsive.</p>",
+        "date_Created": "22 Jan 2022",
+        "technologies": "Html, Css, Javascript",
+        "role": "Challenges",
+        "live": "https://ahmedfarag18.github.io/Sunnyside/",
+        "code": "https://github.com/AhmedFarag18/Sunnyside",
+        "link_Name": "Sunnyside"
+    }, {
+        "category": "challenges,api",
+        "img": "img/portfolio/9.jpg",
+        "title": "Advice Generator App",
+        "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a Advice Generator App and It's fully responsive.</p>",
+        "date_Created": "11 Feb 2022",
+        "technologies": "Html, Css, Javascript, API",
+        "role": "Challenges, API",
+        "live": "https://ahmedfarag18.github.io/advice-generator-app/",
+        "code": "https://github.com/AhmedFarag18/advice-generator-app",
+        "link_Name": "advice-generator-app"
+    }
+]
