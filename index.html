@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Elbrazily Website</title>
+    <title>My Resume</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I'am ahmed farag, Frontend Developer ,This is my portfolio">
     <meta name="keywords" content="Profile, Portfolio, html, css, javascript, jquery, bootstrap, sass, responsive design, front-end">
     <meta name="theme-color" content="#1b1b22" />
+    <meta property="og:title" content="My Resume" />
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" class="js-glass-style" href="css/glass.css" disabled>
@@ -319,12 +320,12 @@
                     <div class="pp-footer">
                         <div class="pp-footer-left hidden">
                             <button type="button" title="Prev Work" class="btn pp-prev-btn"><i class="fas fa-arrow-left"></i></button>
-                            <h3></h3>
+                            <h3>title</h3>
                             <img src="img/portfolio/1.jpg" alt="prev work thumbnail">
                         </div>
                         <div class="pp-footer-right hidden">
                             <button type="button" title="Next Work" class="btn pp-next-btn"><i class="fas fa-arrow-right"></i></button>
-                            <h3></h3>
+                            <h3>title</h3>
                             <img src="img/portfolio/2.jpg" alt="next work thumbnail">
                         </div>
                     </div>
@@ -340,6 +341,24 @@
         </div>
         <!-- End cursor -->
     </div>
+    
+    
+    
+    <!-- This code it's only for structured data for google search, Code from https://schema.org  -->
+
+        <div itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Ahmed Farag</span>, the
+          <span itemprop="disambiguatingDescription">41st President of the United States</span>
+          is the father of
+          <div itemprop="children" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">George W. Bush</span>, the
+            <span itemprop="disambiguatingDescription">43rd President of the United States</span>.
+          </div>
+        </div>
+    
+    
+    
+    
     <script src="js/script.js"></script>
 </body>
 
