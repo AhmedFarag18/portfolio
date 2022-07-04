@@ -44,17 +44,6 @@
         "code": "https://github.com/AhmedFarag18/construction",
         "link_Name": "Construction"
     }, {
-        "category": "html-css",
-        "img": "img/portfolio/7.jpg",
-        "title": "Agency Landing page",
-        "description": "<p>This is Arabic Landing Page For Agency, and Its fully Responsive.</p>",
-        "date_Created": "15 Feb 2021",
-        "technologies": "Html, Css, Javascript",
-        "role": "html-css",
-        "live": "https://ahmedfarag18.github.io/Agency-ar/",
-        "code": "https://github.com/AhmedFarag18/Agency-ar",
-        "link_Name": "Agency-ar"
-    }, {
         "category": "api",
         "img": "img/portfolio/3.jpg",
         "title": "Weather App",
@@ -65,6 +54,17 @@
         "live": "https://ahmedfarag18.github.io/weather.api/",
         "code": "https://github.com/AhmedFarag18/weather.api",
         "link_Name": "Weather"
+    }, {
+        "category": "html-css",
+        "img": "img/portfolio/06.jpg",
+        "title": "Furniture landing page",
+        "description": "<p>This is a furniture landing page preview some products. It's fully responsive in all devices I made ite by using only Html & Css and using javascript to add to cart functionality.</p>",
+        "date_Created": "6 Feb 2022",
+        "technologies": "Html, Css, Javascript",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/furniture",
+        "code": "https://github.com/AhmedFarag18/furniture",
+        "link_Name": "furniture"
     }, {
         "category": "html-css,bootstrap",
         "img": "img/portfolio/4.jpg",
@@ -77,16 +77,16 @@
         "code": "https://github.com/AhmedFarag18/App-Landing-page",
         "link_Name": "App-Landing-page"
     }, {
-        "category": "challenges",
-        "img": "img/portfolio/6.jpg",
-        "title": "Apparel Coming soon",
-        "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a Apparel coming soon page.</p>",
-        "date_Created": "6 Feb 2022",
+        "category": "html-css",
+        "img": "img/portfolio/7.jpg",
+        "title": "Agency Landing page",
+        "description": "<p>This is Arabic Landing Page For Agency, and Its fully Responsive.</p>",
+        "date_Created": "15 Feb 2021",
         "technologies": "Html, Css, Javascript",
-        "role": "Challenges",
-        "live": "https://ahmedfarag18.github.io/apparel-coming-soon/",
-        "code": "https://github.com/AhmedFarag18/apparel-coming-soon",
-        "link_Name": "apparel-coming-soon"
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/Agency-ar/",
+        "code": "https://github.com/AhmedFarag18/Agency-ar",
+        "link_Name": "Agency-ar"
     }, {
         "category": "html-css,challenges",
         "img": "img/portfolio/8.jpg",

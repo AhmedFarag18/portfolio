@@ -278,34 +278,59 @@ if (window.localStorage.getItem("portfolio-color")) {
 
 
 
+
 //======================= contact ====================
 
 const FormAlert = document.querySelector("#form_alerts");
 
-
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyv8uwiCSIybRiBtD2CnkZP6HlHxBbmu5Yd1OwzaMFNDjEY-9Ztey5HYVSdm1VU0R9N/exec'
 const form = document.forms['google-sheet']
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {            
+           successSubmit();            
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+                faildSubmit();
+                FormAlert.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                
+            } else {
+              faildSubmit();
+            }
+              
+          })
+        }
+      }).catch(error => {        
+        faildSubmit();
+      });
+    }
+    form.addEventListener("submit", handleSubmit);
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
 
-            FormAlert.innerHTML = `<div class="alert alert-success">Message Send Successfully</div>`;
-            document.querySelector(".alert").style.top = "15px";
-            setTimeout(() => {
-                document.querySelector(".alert").style.top = "-150px";
-            }, 2000);
-        })
-        .catch(error => {
-            FormAlert.innerHTML = `<div class="alert alert-danger">Message Not Sent</div>`
-            document.querySelector(".alert").style.top = "15px";
-            setTimeout(() => {
-                document.querySelector(".alert").style.top = "-150px";
-            }, 2000);
-        });
-});
-
+function faildSubmit(){
+    FormAlert.innerHTML = `<div class="alert alert-danger">Oops! There was a problem submitting your form</div>`;
+    document.querySelector(".alert").style.top = "15px";
+    setTimeout(() => {
+        document.querySelector(".alert").style.top = "-150px";
+    }, 2000);
+}
+function successSubmit(){
+    FormAlert.innerHTML = `<div class="alert alert-success">Message Send Successfully</div>`;
+    document.querySelector(".alert").style.top = "15px";
+    setTimeout(() => {
+        document.querySelector(".alert").style.top = "-150px";
+    }, 2000);
+}
 
 /*======================== Make Glass Effect ======================================*/
 let glassCheckbox = document.querySelector(".glass-toggle");

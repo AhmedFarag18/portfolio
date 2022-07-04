@@ -1573,6 +1573,9 @@ Responsive
     .section-title h2 {
         font-size: 30px;
     }
+    .cursor1,.cursor2 {
+        display: none;
+    }
 }
 
 @media (max-width:350px) {
