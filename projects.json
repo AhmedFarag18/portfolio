@@ -99,15 +99,15 @@
         "code": "https://github.com/AhmedFarag18/Sunnyside",
         "link_Name": "Sunnyside"
     }, {
-        "category": "challenges,api",
+        "category": "react",
         "img": "img/portfolio/9.jpg",
-        "title": "Advice Generator App",
-        "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a Advice Generator App and It's fully responsive.</p>",
-        "date_Created": "11 Feb 2022",
-        "technologies": "Html, Css, Javascript, API",
-        "role": "Challenges, API",
-        "live": "https://ahmedfarag18.github.io/advice-generator-app/",
-        "code": "https://github.com/AhmedFarag18/advice-generator-app",
-        "link_Name": "advice-generator-app"
+        "title": "Ultra React Profile",
+        "description": "<p>This is simple profile React JS. This profile for training react router and styled components It's fully responsive.</p>",
+        "date_Created": "12 Jun 2022",
+        "technologies": "React, React-router, Styled-components",
+        "role": "React",
+        "live": "https://ultra-react-profile.vercel.app/",
+        "code": "https://github.com/AhmedFarag18/Ultra-React-Profile",
+        "link_Name": "React Profile"
     }
 ]
