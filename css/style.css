@@ -115,6 +115,27 @@ section.active {
   height: 120px;
   width: 100%;
 }
+
+/* start utilities */
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.col-lg-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.col-lg-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+.offset-lg-6 {
+  margin-left: 50%;
+}
+.outset-lg-6 {
+  margin-right: 50%;
+}
+
 /*----------------- alerts ---------------- */
 
 .alert-success {
@@ -1349,24 +1370,27 @@ Features Section
   opacity: 1;
   color: var(--main-color);
 }
-/* Education part */
-.col-md-6 {
-  flex: 0 0 auto;
-  width: 50%;
-}
-.col-lg-6 {
-  flex: 0 0 auto;
-  width: 50%;
+
+/* ==============================
+  start Category Skills part 
+==================================== */
+.skills_category {
+  margin-top: 60px;
 }
 
-.offset-lg-6 {
-  margin-left: 50%;
-}
-.outset-lg-6 {
-  margin-right: 50%;
+.skills_category-title {
+  font-size: 24px;
+  opacity: 0.6;
+  letter-spacing: 9px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
-.features-section .row.timline {
+/* ============================
+  Education || Timeline Section
+========================================== */
+
+.row.timline {
   position: relative;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -1376,7 +1400,6 @@ Features Section
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
-  /* gap: 20px; */
 }
 
 .timeline .education_item {
@@ -1659,6 +1682,9 @@ Responsive
   .timeline .education_item:first-child {
     padding-top: 45px;
   }
+  .timeline .education_item .education_item-outer::after {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1711,5 +1737,11 @@ Responsive
   }
   .timeline .education_item .education_item-outer {
     padding: 30px;
+  }
+  .timeline .education_item {
+    padding: 0 15px;
+  }
+  .row.timeline {
+    justify-content: center;
   }
 }
