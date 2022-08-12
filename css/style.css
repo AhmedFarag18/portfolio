@@ -1639,7 +1639,24 @@ Contact  Form
 /* =======================
 Responsive
 ============================= */
-
+@media (min-width: 1720px) {
+  .timeline .education_item {
+    width: 100%;
+  }
+  .timeline .education_item {
+    margin: 30px 0 0 0;
+  }
+  .education_item:after,
+  .education_item:before {
+    display: none;
+  }
+  .timeline .education_item:first-child {
+    padding-top: 45px;
+  }
+  .timeline .education_item .education_item-outer::after {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .bg-animation-effect .col-10,
   .bg-animation-effect .col-9,
