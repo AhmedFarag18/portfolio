@@ -17,7 +17,7 @@ function bgAnimationItems() {
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             const div = document.createElement("div");
-            div.className = `col-${j+1}`;
+            div.className = `col-${j + 1}`;
             document.querySelector(".bg-animation-effect").appendChild(div);
         }
     }
@@ -98,7 +98,7 @@ const filterBtnsContainer = document.querySelector(".portfolio-filter");
 
 filterBtnsContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("portfolio-filter-btn") && !e.target.classList.contains("active")) {
-        filterBtnsContainer.querySelector(".active").classList.remove("active")
+        filterBtnsContainer.querySelector(".active").classList.remove("active");
         e.target.classList.add("active");
         toggleBodyScrolling();
         document.querySelector(".filter-status").classList.add("active");
@@ -111,7 +111,7 @@ filterBtnsContainer.addEventListener("click", (e) => {
             toggleBodyScrolling();
         }, 800);
     }
-})
+});
 
 
 /*=============== Filter Items when click category Buttons =================*/
@@ -158,10 +158,10 @@ document.querySelector(".pp-close-btn").addEventListener("click", togglePopup);
 
 function portfolioItemDetails() {
 
-    document.querySelector(".pp-thumbnail img").src = portfolioItems[portfolioItemIndex].querySelector("img").src;
-    document.querySelector(".pp-header h3").innerHTML = portfolioItems[portfolioItemIndex].querySelector(".portfolio-item-title").innerHTML;
-    document.querySelector(".pp-body").innerHTML = portfolioItems[portfolioItemIndex].querySelector(".portfolio-item-details").innerHTML;
-    document.querySelector(".pp-counter").innerHTML = `${portfolioItemIndex+1} of ${portfolioItems.length} ( <span title="category">${document.querySelector(".portfolio-filter-btn.active").innerHTML}</span>)`;
+    document.querySelector(".pp-thumbnail img").src = portfolioItems[ portfolioItemIndex ].querySelector("img").src;
+    document.querySelector(".pp-header h3").innerHTML = portfolioItems[ portfolioItemIndex ].querySelector(".portfolio-item-title").innerHTML;
+    document.querySelector(".pp-body").innerHTML = portfolioItems[ portfolioItemIndex ].querySelector(".portfolio-item-details").innerHTML;
+    document.querySelector(".pp-counter").innerHTML = `${portfolioItemIndex + 1} of ${portfolioItems.length} ( <span title="category">${document.querySelector(".portfolio-filter-btn.active").innerHTML}</span>)`;
 }
 
 
@@ -169,8 +169,8 @@ function portfolioItemDetails() {
 function updateNextPrevItem() {
     if (portfolioItemIndex !== 0) {
         document.querySelector(".pp-footer-left").classList.remove("hidden");
-        document.querySelector(".pp-footer-left h3").innerHTML = portfolioItems[portfolioItemIndex - 1].querySelector("h3").innerHTML;
-        document.querySelector(".pp-footer-left img").src = portfolioItems[portfolioItemIndex - 1].querySelector("img").src;
+        document.querySelector(".pp-footer-left h3").innerHTML = portfolioItems[ portfolioItemIndex - 1 ].querySelector("h3").innerHTML;
+        document.querySelector(".pp-footer-left img").src = portfolioItems[ portfolioItemIndex - 1 ].querySelector("img").src;
     } else {
         document.querySelector(".pp-footer-left").classList.add("hidden");
     }
@@ -178,8 +178,8 @@ function updateNextPrevItem() {
 
     if (portfolioItemIndex !== portfolioItems.length - 1) {
         document.querySelector(".pp-footer-right").classList.remove("hidden");
-        document.querySelector(".pp-footer-right h3").innerHTML = portfolioItems[portfolioItemIndex + 1].querySelector("h3").innerHTML;
-        document.querySelector(".pp-footer-right img").src = portfolioItems[portfolioItemIndex + 1].querySelector("img").src;
+        document.querySelector(".pp-footer-right h3").innerHTML = portfolioItems[ portfolioItemIndex + 1 ].querySelector("h3").innerHTML;
+        document.querySelector(".pp-footer-right img").src = portfolioItems[ portfolioItemIndex + 1 ].querySelector("img").src;
     } else {
         document.querySelector(".pp-footer-right").classList.add("hidden");
     }
@@ -230,12 +230,12 @@ document.addEventListener("click", (e) => {
 let cursor1 = document.querySelector(".cursor1");
 let cursor2 = document.querySelector(".cursor2");
 
-document.addEventListener("mousemove", function(e) {
+document.addEventListener("mousemove", function (e) {
     let mainCursor = document.querySelector(".cursor_parent");
     mainCursor.style.display = "block";
 
     cursor1.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px";
-})
+});
 
 
 
@@ -277,61 +277,6 @@ if (window.localStorage.getItem("portfolio-color")) {
 }
 
 
-
-
-//======================= contact ====================
-
-const FormAlert = document.querySelector("#form_alerts");
-
-const form = document.forms['google-sheet']
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {            
-           successSubmit();            
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-                faildSubmit();
-                FormAlert.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-                
-            } else {
-              faildSubmit();
-            }
-              
-          })
-        }
-      }).catch(error => {        
-        faildSubmit();
-      });
-    }
-    form.addEventListener("submit", handleSubmit);
-
-
-function faildSubmit(){
-    FormAlert.innerHTML = `<div class="alert alert-danger">Oops! There was a problem submitting your form</div>`;
-    document.querySelector(".alert").style.top = "15px";
-    setTimeout(() => {
-        document.querySelector(".alert").style.top = "-150px";
-    }, 2000);
-}
-function successSubmit(){
-    FormAlert.innerHTML = `<div class="alert alert-success">Message Send Successfully</div>`;
-    document.querySelector(".alert").style.top = "15px";
-    setTimeout(() => {
-        document.querySelector(".alert").style.top = "-150px";
-    }, 2000);
-}
-
 /*======================== Make Glass Effect ======================================*/
 let glassCheckbox = document.querySelector(".glass-toggle");
 let glassStyle = document.querySelector(".js-glass-style");
@@ -370,7 +315,7 @@ light & Dark mode
 let lightCheckbox = document.querySelector(".light-toggle");
 let lightStyle = document.querySelector(".js-light-style");
 
-lightCheckbox.addEventListener("click", function() {
+lightCheckbox.addEventListener("click", function () {
     if (lightCheckbox.classList.contains("active")) {
         lightStyle.classList.remove("light");
         lightCheckbox.classList.remove("active");
@@ -407,22 +352,22 @@ function showProjects(data) {
     for (let i = 0; i < data.length; i++) {
         document.querySelector(".portfolio-items").innerHTML += `
                 <!-- Start portfolio items -->
-                    <div class="portfolio-item show" data-category="${data[i].category}">
+                    <div class="portfolio-item show" data-category="${data[ i ].category}">
                         <div class="portfolio-item-thumbail">
-                            <img src="${data[i].img}" alt="thumbail">
+                            <img src="${data[ i ].img}" alt="thumbail">
                             <button type="button" class="btn more-info-btn">more info</button>
                         </div>
-                        <h3 class="portfolio-item-title">${data[i].title}</h3>
+                        <h3 class="portfolio-item-title">${data[ i ].title}</h3>
                         <div class="portfolio-item-details">
                             <div class="description">
-                            ${data[i].description}
+                            ${data[ i ].description}
                             </div>
                             <div class="general-info">
-                                <p>Created- <span>${data[i].date_Created}</span></p>
-                                <p>Technologies Used - <span>${data[i].technologies}</span></p>
-                                <p>Role - <span>${data[i].role}</span></p>
-                                <p>View Live - <span><a href="${data[i].live}" target="_blank">${data[i].link_Name}</a></span></p>
-                                <p>Source Code - <span><a href="${data[i].code}" target="_blank">${data[i].link_Name}</a></span></p>
+                                <p>Created- <span>${data[ i ].date_Created}</span></p>
+                                <p>Technologies Used - <span>${data[ i ].technologies}</span></p>
+                                <p>Role - <span>${data[ i ].role}</span></p>
+                                <p>View Live - <span><a href="${data[ i ].live}" target="_blank">${data[ i ].link_Name}</a></span></p>
+                                <p>Source Code - <span><a href="${data[ i ].code}" target="_blank">${data[ i ].link_Name}</a></span></p>
                             </div>
                         </div>
                     </div>
@@ -444,3 +389,58 @@ function getAllProjects() {
         });
 }
 getAllProjects();
+
+
+//======================= Contact Form ====================
+const FormAlert = document.querySelector("#form_alerts");
+const form = document.forms[ 'form-submit' ];
+
+// function for send form data by formspace
+async function handleSubmit(event) {
+    event.preventDefault();
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            successSubmit();
+            form.reset();
+        } else {
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    faildSubmit();
+                    FormAlert.innerHTML = `<div class="alert alert-danger">Can't send an empty form </div>`;
+                    document.querySelector(".alert").style.top = "15px";
+                } else {
+                    faildSubmit();
+                }
+            });
+        }
+    }).catch(error => {
+        faildSubmit();
+    });
+}
+
+// when clcik the form button
+form.addEventListener("submit", handleSubmit);
+
+
+// function for success and field when submit
+function faildSubmit() {
+    FormAlert.innerHTML = `<div class="alert alert-danger">Oops! There was a problem submitting your form</div>`;
+    document.querySelector(".alert").style.top = "15px";
+    setTimeout(() => {
+        document.querySelector(".alert").style.top = "-150px";
+    }, 2000);
+}
+function successSubmit() {
+    FormAlert.innerHTML = `<div class="alert alert-success">Message Send Successfully</div>`;
+    document.querySelector(".alert").style.top = "15px";
+    setTimeout(() => {
+        document.querySelector(".alert").style.top = "-150px";
+    }, 2000);
+}
