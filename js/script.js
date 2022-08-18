@@ -355,7 +355,7 @@ function showProjects(data) {
                     <div class="portfolio-item show" data-category="${data[ i ].category}">
                         <div class="portfolio-item-thumbail">
                             <img src="${data[ i ].img}" alt="thumbail">
-                            <button type="button" class="btn more-info-btn">more info</button>
+                            <button type="button" class="btn more-info-btn">more info <i class="fas fa-info-circle"></i></button>
                         </div>
                         <h3 class="portfolio-item-title">${data[ i ].title}</h3>
                         <div class="portfolio-item-details">
