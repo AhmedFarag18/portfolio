@@ -848,6 +848,7 @@ About Section
   opacity: 0;
   visibility: hidden;
   border-radius: 20px;
+  transition: all 0.5s ease;
 }
 
 a.close_profile {
