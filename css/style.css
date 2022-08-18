@@ -928,8 +928,8 @@ a.close_profile {
   gap: 10px;
 }
 
-.about-btns a span {
-  margin-right: 5px;
+.about-btns a i {
+  margin-left: 5px;
 }
 .about-btns a:first-child {
   margin-right: 20px;
