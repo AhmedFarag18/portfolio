@@ -256,8 +256,8 @@ button {
 
 .cursor1 {
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border: 1px solid #c6c6c6;
   border-radius: 50%;
   left: 0;
@@ -265,6 +265,8 @@ button {
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: 0.2s;
+  background-color: #fff;
+  mix-blend-mode: difference;
   z-index: 9999;
 }
 
@@ -272,7 +274,7 @@ button {
   position: fixed;
   width: 8px;
   height: 8px;
-  border: 1px solid #c6c6c6;
+  border: 1px solid var(--main-color);
   border-radius: 50%;
   left: 0;
   top: 0;
