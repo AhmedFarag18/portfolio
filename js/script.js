@@ -238,6 +238,19 @@ document.addEventListener("mousemove", function (e) {
 });
 
 
+let anchor = document.querySelectorAll("a");
+anchor.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        cursor1.classList.add('hover2');
+        cursor2.classList.add('hover1');
+    }
+    );
+    item.addEventListener('mouseleave', () => {
+        cursor1.classList.remove('hover2');
+        cursor2.classList.remove('hover1');
+    }
+    );
+});
 
 /* ===========================================================
 Color Switcher

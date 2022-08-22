@@ -256,17 +256,15 @@ button {
 
 .cursor1 {
   position: fixed;
-  width: 80px;
-  height: 80px;
-  border: 1px solid #c6c6c6;
+  width: 40px;
+  height: 40px;
+  border: 2px dashed var(--white-light);
   border-radius: 50%;
   left: 0;
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: 0.2s;
-  background-color: #fff;
-  mix-blend-mode: difference;
+  transition: all 200ms ease-out;
   z-index: 9999;
 }
 
@@ -274,25 +272,27 @@ button {
   position: fixed;
   width: 8px;
   height: 8px;
-  border: 1px solid var(--main-color);
+  background-color: var(--white-light);
   border-radius: 50%;
   left: 0;
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: 0.25s;
+  transition: all 100ms ease-out;
   z-index: 9999;
 }
 
-/* .main:hover~.cursor1 {
-    transform: translate(-50%, -50%) scale(1.5);
-    background-color: #c6c6c6;
-    opacity: .5;
+.hover1 {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: var(--white-light);
+  opacity: 0.5;
+  width: 30px;
+  height: 30px;
 }
 
-.main:hover~.cursor2 {
-    opacity: 0;
-} */
+.hover2 {
+  opacity: 0;
+}
 
 /* ---------------------------
 Switcher Color
