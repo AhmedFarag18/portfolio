@@ -1569,7 +1569,7 @@ Contact Section
   color: var(--white-light);
   border-radius: 50%;
   transition: all 0.3s ease;
-  margin: 0 3px;
+  margin: 3px;
 }
 
 .contact-info-item .social-links a:hover {
