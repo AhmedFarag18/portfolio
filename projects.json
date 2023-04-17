@@ -1,4 +1,5 @@
-[{
+[
+    {
         "category": "html-css",
         "img": "img/portfolio/1.jpg",
         "title": "education course website",
@@ -11,6 +12,30 @@
         "link_Name": "courses-website"
     },
     {
+        "category": "html-css bootstrap",
+        "img": "img/portfolio/11.png",
+        "title": "Portfolio website",
+        "description": "<p>This is a portfolio For android developer, It's Fully responsive website, website have some settings like change fontSize in all website and some features with animations.</p>",
+        "date_Created": "12 Sep 2022",
+        "technologies": "Html, Css, Javascript, Bootstrap, FormSpree",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/gemy-portfolio/",
+        "code": "https://github.com/AhmedFarag18/gemy-portfolio/",
+        "link_Name": "Gamal-portfolio"
+    },
+    {
+        "category": "react",
+        "img": "img/portfolio/12.png",
+        "title": "Ecommerce website",
+        "description": "<p>This is a  graduation Ecommerce website. you need a basic understanding of HTML, CSS, Javascript, TailwindCss and Big khnowladge with React and redux else you can use Localstorage.</p>",
+        "date_Created": "12 Sep 2022",
+        "technologies": "React, React-router, redux-toolkit, Tailwind Css ",
+        "role": "React",
+        "live": "https://ahmedfarag18.github.io/graduation_ecommerce/",
+        "code": "https://github.com/AhmedFarag18/graduation_ecommerce",
+        "link_Name": "Gamal-portfolio"
+    },
+    {
         "category": "bootstrap",
         "img": "img/portfolio/5.jpg",
         "title": "Restaurant website",
@@ -21,9 +46,10 @@
         "live": "https://ahmedfarag18.github.io/BrazilianFood/",
         "code": "https://github.com/AhmedFarag18/BrazilianFood",
         "link_Name": "BrazilianFood"
-    }, {
+    },
+    {
         "category": "challenges,api",
-        "img": "img/portfolio/10.jpg",
+        "img": "img/portfoli1/10.jpg",
         "title": "Rest Countries API",
         "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a rest countries api with color theme switcher</p>",
         "date_Created": "6 Feb 2022",
@@ -32,7 +58,8 @@
         "live": "https://ahmedfarag18.github.io/rest-countries/",
         "code": "https://github.com/AhmedFarag18/rest-countries",
         "link_Name": "Rest Countries"
-    }, {
+    },
+    {
         "category": "html-css",
         "img": "img/portfolio/2.jpg",
         "title": "Construction website",
@@ -43,7 +70,8 @@
         "live": "https://ahmedfarag18.github.io/construction/",
         "code": "https://github.com/AhmedFarag18/construction",
         "link_Name": "Construction"
-    }, {
+    },
+    {
         "category": "api",
         "img": "img/portfolio/3.jpg",
         "title": "Weather App",
@@ -54,7 +82,8 @@
         "live": "https://ahmedfarag18.github.io/weather.api/",
         "code": "https://github.com/AhmedFarag18/weather.api",
         "link_Name": "Weather"
-    }, {
+    },
+    {
         "category": "html-css",
         "img": "img/portfolio/06.jpg",
         "title": "Furniture landing page",
@@ -65,7 +94,8 @@
         "live": "https://ahmedfarag18.github.io/furniture",
         "code": "https://github.com/AhmedFarag18/furniture",
         "link_Name": "furniture"
-    }, {
+    },
+    {
         "category": "html-css,bootstrap",
         "img": "img/portfolio/4.jpg",
         "title": "App Landing Page",
@@ -76,7 +106,8 @@
         "live": "https://ahmedfarag18.github.io/App-Landing-page/",
         "code": "https://github.com/AhmedFarag18/App-Landing-page",
         "link_Name": "App-Landing-page"
-    }, {
+    },
+    {
         "category": "html-css",
         "img": "img/portfolio/7.jpg",
         "title": "Agency Landing page",
@@ -87,7 +118,8 @@
         "live": "https://ahmedfarag18.github.io/Agency-ar/",
         "code": "https://github.com/AhmedFarag18/Agency-ar",
         "link_Name": "Agency-ar"
-    }, {
+    },
+    {
         "category": "html-css,challenges",
         "img": "img/portfolio/8.jpg",
         "title": "Sunnyside landing page",
@@ -98,7 +130,8 @@
         "live": "https://ahmedfarag18.github.io/Sunnyside/",
         "code": "https://github.com/AhmedFarag18/Sunnyside",
         "link_Name": "Sunnyside"
-    }, {
+    },
+    {
         "category": "react",
         "img": "img/portfolio/9.jpg",
         "title": "Ultra React Profile",
