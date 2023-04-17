@@ -49,7 +49,7 @@
     },
     {
         "category": "challenges,api",
-        "img": "img/portfoli1/10.jpg",
+        "img": "img/portfolio/10.jpg",
         "title": "Rest Countries API",
         "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a rest countries api with color theme switcher</p>",
         "date_Created": "6 Feb 2022",
