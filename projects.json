@@ -1,7 +1,7 @@
 [
     {
         "category": "react,api",
-        "img": "img/portfolio/cover-ecommerce.png",
+        "img": "img/portfolio/ecommerce.png",
         "title": "Ecommerce website",
         "description": "<p>This project is a comprehensive eCommerce application built using React,redux, redux-toolkit, and Tailwind-CSS. It features a user-friendly interface with essential components such as a home page, product catalog, shopping cart, and user authentication (login, registration, password management). The platform integrates Stripe for secure payments and includes an admin dashboard for managing roles, and CRUD operations on products, categories, and brands, including image uploads. Users can also leave comments on products, while access levels ensure differentiated user experiences</p>",
         "date_Created": "12 Sep 2022",
@@ -13,7 +13,7 @@
     },
     {
         "category": "html-css bootstrap",
-        "img": "img/portfolio/cover-portfolio-Gemy.png",
+        "img": "img/portfolio/portfolio-gemy.png",
         "title": "Portfolio website",
         "description": "<p>This portfolio website is designed for an Android developer, featuring a fully responsive in all devices. The site includes customizable settings, such as an option to adjust the font size throughout the website, catering to individual user preferences. Enhanced with various animations. Also It’s Built using HTML, CSS, and JavaScript, Bootstrap for responsive design and FormSpree for efficient form handling.</p>",
         "date_Created": "12 Sep 2022",
@@ -25,7 +25,7 @@
     },
     {
         "category": "html-css",
-        "img": "img/portfolio/cover-courses-landingpage.png",
+        "img": "img/portfolio/courses-landingpage.png",
         "title": "courses landing page",
         "description": "<p>This template is designed to display courses and highlight the offerings of a course center. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML and CSS, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
         "date_Created": "4 Dec 2020",
@@ -37,7 +37,7 @@
     },
     {
         "category": "bootstrap",
-        "img": "img/portfolio/cover-restaurant.png",
+        "img": "img/portfolio/restaurant.png",
         "title": "Restaurant website",
         "description": "<p>A fully responsive landing page for a restaurant, responsive for all devices. Utilizes HTML, CSS, and JavaScript, with jQuery and Bootstrap for enhanced styling and responsiveness. Features include a countdown timer for events, AOS for smooth section animations, and Owl Carousel for an interactive image slider.</p>",
         "date_Created": "21 Dec 2020",
@@ -49,7 +49,7 @@
     },
     {
         "category": "html-css",
-        "img": "img/portfolio/cover-agancy-arabic.png",
+        "img": "img/portfolio/agancy-arabic.png",
         "title": "Agency Landing page",
         "description": "<p>This template is designed to display Agency website. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML, CSS and Javascript, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
         "date_Created": "15 Feb 2021",
@@ -61,7 +61,7 @@
     },
     {
         "category": "challenges,api",
-        "img": "img/portfolio/cover-Countries-API.png",
+        "img": "img/portfolio/countries-api.png",
         "title": "Countries API Challenge",
         "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a rest countries api with color theme switcher</p>",
         "date_Created": "6 Feb 2022",
@@ -73,7 +73,7 @@
     },
     {
         "category": "html-css,bootstrap",
-        "img": "img/portfolio/cover-App-landing-page.png",
+        "img": "img/portfolio/app-landing-page.png",
         "title": "App Landing Page",
         "description": "<p>This Landing page is designed to display App Details and features of Application. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML, CSS, Javascript, and Use Bootstrap 4, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
         "date_Created": "24 Mar 2021",
@@ -85,7 +85,7 @@
     },
     {
         "category": "html-css",
-        "img": "img/portfolio/cover-rocker-furniture.png",
+        "img": "img/portfolio/rocker-furniture.png",
         "title": "Rocker Furniture Website",
         "description": "<p>This Landing page is designed to display Rocker Furniture landing page and Add to cart. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML, CSS, and Javascript, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
         "date_Created": "6 Feb 2022",
@@ -97,7 +97,7 @@
     },
     {
         "category": "html-css",
-        "img": "img/portfolio/cover-Construction-website.png",
+        "img": "img/portfolio/construction-website.png",
         "title": "Construction website",
         "description": "<p>This Construction website is designed to display 5 pages for construction company and All details. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML, CSS, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
         "date_Created": "12 Oct 2020",
