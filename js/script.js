@@ -158,9 +158,9 @@ document.querySelector(".pp-close-btn").addEventListener("click", togglePopup);
 
 function portfolioItemDetails() {
 
-    document.querySelector(".pp-thumbnail img").src = portfolioItems[ portfolioItemIndex ].querySelector("img").src;
-    document.querySelector(".pp-header h3").innerHTML = portfolioItems[ portfolioItemIndex ].querySelector(".portfolio-item-title").innerHTML;
-    document.querySelector(".pp-body").innerHTML = portfolioItems[ portfolioItemIndex ].querySelector(".portfolio-item-details").innerHTML;
+    document.querySelector(".pp-thumbnail img").src = portfolioItems[portfolioItemIndex].querySelector("img").src;
+    document.querySelector(".pp-header h3").innerHTML = portfolioItems[portfolioItemIndex].querySelector(".portfolio-item-title").innerHTML;
+    document.querySelector(".pp-body").innerHTML = portfolioItems[portfolioItemIndex].querySelector(".portfolio-item-details").innerHTML;
     document.querySelector(".pp-counter").innerHTML = `${portfolioItemIndex + 1} of ${portfolioItems.length} ( <span title="category">${document.querySelector(".portfolio-filter-btn.active").innerHTML}</span>)`;
 }
 
@@ -169,8 +169,8 @@ function portfolioItemDetails() {
 function updateNextPrevItem() {
     if (portfolioItemIndex !== 0) {
         document.querySelector(".pp-footer-left").classList.remove("hidden");
-        document.querySelector(".pp-footer-left h3").innerHTML = portfolioItems[ portfolioItemIndex - 1 ].querySelector("h3").innerHTML;
-        document.querySelector(".pp-footer-left img").src = portfolioItems[ portfolioItemIndex - 1 ].querySelector("img").src;
+        document.querySelector(".pp-footer-left h3").innerHTML = portfolioItems[portfolioItemIndex - 1].querySelector("h3").innerHTML;
+        document.querySelector(".pp-footer-left img").src = portfolioItems[portfolioItemIndex - 1].querySelector("img").src;
     } else {
         document.querySelector(".pp-footer-left").classList.add("hidden");
     }
@@ -178,8 +178,8 @@ function updateNextPrevItem() {
 
     if (portfolioItemIndex !== portfolioItems.length - 1) {
         document.querySelector(".pp-footer-right").classList.remove("hidden");
-        document.querySelector(".pp-footer-right h3").innerHTML = portfolioItems[ portfolioItemIndex + 1 ].querySelector("h3").innerHTML;
-        document.querySelector(".pp-footer-right img").src = portfolioItems[ portfolioItemIndex + 1 ].querySelector("img").src;
+        document.querySelector(".pp-footer-right h3").innerHTML = portfolioItems[portfolioItemIndex + 1].querySelector("h3").innerHTML;
+        document.querySelector(".pp-footer-right img").src = portfolioItems[portfolioItemIndex + 1].querySelector("img").src;
     } else {
         document.querySelector(".pp-footer-right").classList.add("hidden");
     }
@@ -365,22 +365,22 @@ function showProjects(data) {
     for (let i = 0; i < data.length; i++) {
         document.querySelector(".portfolio-items").innerHTML += `
                 <!-- Start portfolio items -->
-                    <div class="portfolio-item show" data-category="${data[ i ].category}">
+                    <div class="portfolio-item show" data-category="${data[i].category}">
                         <div class="portfolio-item-thumbail">
-                            <img src="${data[ i ].img}" alt="thumbail">
+                            <img src="${data[i].img}" alt="thumbail">
                             <button type="button" class="btn more-info-btn">more info <i class="fas fa-info-circle"></i></button>
                         </div>
-                        <h3 class="portfolio-item-title">${data[ i ].title}</h3>
+                        <h3 class="portfolio-item-title">${data[i].title}</h3>
                         <div class="portfolio-item-details">
                             <div class="description">
-                            ${data[ i ].description}
+                            ${data[i].description}
                             </div>
                             <div class="general-info">
-                                <p>Created- <span>${data[ i ].date_Created}</span></p>
-                                <p>Technologies Used - <span>${data[ i ].technologies}</span></p>
-                                <p>Role - <span>${data[ i ].role}</span></p>
-                                <p>View Live - <span><a href="${data[ i ].live}" target="_blank">${data[ i ].link_Name}</a></span></p>
-                                <p>Source Code - <span><a href="${data[ i ].code}" target="_blank">${data[ i ].link_Name}</a></span></p>
+                                <p>Created- <span>${data[i].date_Created}</span></p>
+                                <p>Technologies Used - <span>${data[i].technologies}</span></p>
+                                <p>Role - <span>${data[i].role}</span></p>
+                                <p>View Live - <span><a href="${data[i].live}" target="_blank">${data[i].link_Name}</a></span></p>
+                                <p>Source Code - <span><a href="${data[i].code}" target="_blank">${data[i].link_Name}</a></span></p>
                             </div>
                         </div>
                     </div>
@@ -406,7 +406,7 @@ getAllProjects();
 
 //======================= Contact Form ====================
 const FormAlert = document.querySelector("#form_alerts");
-const form = document.forms[ 'form-submit' ];
+const form = document.forms['form-submit'];
 
 // function for send form data by formspace
 async function handleSubmit(event) {

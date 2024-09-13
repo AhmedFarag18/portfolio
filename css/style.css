@@ -111,6 +111,7 @@ section {
 section.active {
   display: block;
 }
+
 .spacer-120 {
   height: 120px;
   width: 100%;
@@ -121,21 +122,26 @@ section.active {
   flex: 0 0 auto;
   width: 50%;
 }
+
 .col-lg-6 {
   flex: 0 0 auto;
   width: 50%;
 }
+
 .col-lg-1 {
   flex: 0 0 auto;
   width: 8.33333333%;
 }
+
 .col-lg-8 {
   flex: 0 0 auto;
   width: 75%;
 }
+
 .offset-lg-6 {
   margin-left: 50%;
 }
+
 .outset-lg-6 {
   margin-right: 50%;
 }
@@ -487,6 +493,7 @@ Bg Animation Effect
   0% {
     transform: translateY(0vh);
   }
+
   100% {
     transform: translateY(12.5vh);
   }
@@ -500,6 +507,7 @@ Bg Animation Effect
   0% {
     transform: translateY(0vh);
   }
+
   100% {
     transform: translateY(-12.5vh);
   }
@@ -626,6 +634,7 @@ Page Loader
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -714,6 +723,7 @@ Header
 }
 
 @media (min-width: 992px) {
+
   .header .nav-toggler.active:hover span::before,
   .header .nav-toggler.active:hover span::after {
     transform: rotate(0deg);
@@ -810,7 +820,7 @@ About Section
   position: relative;
 }
 
-.about__content .profile > img {
+.about__content .profile>img {
   background: var(--main-color);
   max-width: 200px;
   border: 5px solid var(--dark-light);
@@ -820,7 +830,7 @@ About Section
 
 /* == preview full img== */
 
-.about__content .profile > .preview_img {
+.about__content .profile>.preview_img {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -934,6 +944,7 @@ a.close_profile {
 .about-btns a i {
   margin-left: 5px;
 }
+
 .about-btns a:first-child {
   margin-right: 20px;
 }
@@ -1158,10 +1169,12 @@ portfolio Popup
   0% {
     transform: translateX(-100%);
   }
+
   40%,
   60% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -1175,10 +1188,12 @@ portfolio Popup
   0% {
     transform: translateX(100%);
   }
+
   40%,
   60% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -1411,6 +1426,7 @@ Features Section
   vertical-align: middle;
   width: 40px;
 }
+
 .skills-item span {
   font-size: 18px;
   margin: 10px 0 0 0;
@@ -1466,6 +1482,7 @@ Features Section
 .timeline .education_item:nth-child(odd):after {
   right: 0;
 }
+
 .timeline .education_item:nth-child(even):after {
   left: -1px;
 }
@@ -1473,6 +1490,7 @@ Features Section
 .timeline .education_item:nth-child(odd):before {
   right: -4.5px;
 }
+
 .timeline .education_item:nth-child(even):before {
   left: -6px;
 }
@@ -1490,6 +1508,7 @@ Features Section
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
+
 .timeline.education_item .education_item-outer:nth-child(odd) {
   width: 50%;
 }
@@ -1505,9 +1524,11 @@ Features Section
   border-width: 8px 8px;
   border-color: transparent transparent transparent var(--dark-light);
 }
+
 .timeline .education_item:nth-child(odd) .education_item-outer::after {
   right: 24px;
 }
+
 .timeline .education_item:nth-child(even) .education_item-outer::after {
   left: 24px;
   border-width: 8px 8px;
@@ -1518,13 +1539,16 @@ Features Section
   font-size: 16px;
   color: var(--main-color);
 }
+
 .timeline .education_item-title {
   font-size: 20px;
   font-weight: 600;
 }
+
 .timeline .education_item-desc {
   color: var(--white-light);
 }
+
 /* ======================
 Contact Section
 ================================ */
@@ -1674,72 +1698,91 @@ Responsive
   .timeline .education_item {
     width: 100%;
   }
+
   .timeline .education_item {
     margin: 30px 0 0 0;
   }
+
   .education_item:after,
   .education_item:before {
     display: none;
   }
+
   .timeline .education_item:first-child {
     padding-top: 45px;
   }
+
   .timeline .education_item .education_item-outer::after {
     display: none;
   }
 }
 
 @media (max-width: 992px) {
+
   .bg-animation-effect .col-10,
   .bg-animation-effect .col-9,
   .bg-animation-effect .col-8 {
     display: none;
   }
+
   .bg-animation-effect div {
     margin-left: calc((100% - 28px) / 8);
   }
+
   .portfolio-item {
     width: calc(50% - 30px);
   }
+
   .features-item {
     width: calc((100% / 2) - 30px);
   }
+
   .skills_category .skills {
     width: 80%;
   }
+
   .skills_category .skills-item {
     max-width: calc(100% / 4 - 7px);
   }
 }
 
 @media (max-width: 767px) {
+
   .bg-animation-effect .col-7,
   .bg-animation-effect .col-6 {
     display: none;
   }
+
   .bg-animation-effect div {
     margin-left: calc((100% - 28px) / 8);
   }
+
   .portfolio-item {
     width: calc(100% - 30px);
   }
+
   .preview_full-img img {
     height: auto;
     width: 90%;
   }
+
   .timeline .education_item {
     margin: 30px 0 0 0;
   }
+
   .education_item:after,
   .education_item:before {
     display: none;
   }
+
   .timeline .education_item:first-child {
     padding-top: 45px;
   }
+
   .timeline .education_item .education_item-outer::after {
     display: none;
   }
+
   .skills_category .skills-item {
     max-width: calc(100% / 3 - 7px);
   }
@@ -1749,33 +1792,42 @@ Responsive
   .pp-header h3 {
     font-size: 24px;
   }
+
   .pp-footer h3 {
     font-size: 16px;
   }
+
   .pp-footer img {
     width: 100px;
   }
+
   .contact-info-item {
     font-size: 18px;
   }
+
   .contact-info-item span {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
   }
+
   .features-item {
     width: calc((100% / 1) - 30px);
   }
+
   .section-title h2 {
     font-size: 30px;
   }
+
   .cursor1,
   .cursor2 {
     display: none;
   }
+
   .spacer-120 {
     height: 60px;
   }
+
   .skills_category .skills-item {
     max-width: calc(100% / 2 - 7px);
   }
@@ -1785,29 +1837,37 @@ Responsive
   .header .nav-inner ul a {
     font-size: 35px;
   }
+
   .header .nav-inner ul a::before {
     width: 60px;
     height: 60px;
     top: calc(50% - 30px);
   }
+
   .about__content .skills-item {
     flex: 1 1 100%;
   }
+
   .section-title h2 {
     font-size: 26px;
   }
+
   .timeline .education_item .education_item-outer {
     padding: 30px;
   }
+
   .timeline .education_item {
     padding: 0 15px;
   }
+
   .row.timeline {
     justify-content: center;
   }
+
   .skills_category .skills-item {
     max-width: calc(100% / 1 - 7px);
   }
+
   .skills_category .skills {
     justify-content: center;
   }

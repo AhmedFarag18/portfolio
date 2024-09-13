@@ -1,33 +1,9 @@
 [
     {
-        "category": "html-css",
-        "img": "img/portfolio/1.jpg",
-        "title": "education course website",
-        "description": "<p>This is Template For show Courses and What does The courese Center offer, It's Fully responsive website.</p>",
-        "date_Created": "4 Dec 2020",
-        "technologies": "Html, Css",
-        "role": "html-css",
-        "live": "https://ahmedfarag18.github.io/courses-website/",
-        "code": "https://github.com/AhmedFarag18/courses-website",
-        "link_Name": "courses-website"
-    },
-    {
-        "category": "html-css bootstrap",
-        "img": "img/portfolio/11.png",
-        "title": "Portfolio website",
-        "description": "<p>This is a portfolio For android developer, It's Fully responsive website, website have some settings like change fontSize in all website and some features with animations.</p>",
-        "date_Created": "12 Sep 2022",
-        "technologies": "Html, Css, Javascript, Bootstrap, FormSpree",
-        "role": "html-css",
-        "live": "https://ahmedfarag18.github.io/gemy-portfolio/",
-        "code": "https://github.com/AhmedFarag18/gemy-portfolio/",
-        "link_Name": "Gamal-portfolio"
-    },
-    {
-        "category": "react",
-        "img": "img/portfolio/12.png",
+        "category": "react,api",
+        "img": "img/portfolio/cover-ecommerce.png",
         "title": "Ecommerce website",
-        "description": "<p>This is a  graduation Ecommerce website. you need a basic understanding of HTML, CSS, Javascript, TailwindCss and Big khnowladge with React and redux else you can use Localstorage.</p>",
+        "description": "<p>This project is a comprehensive eCommerce application built using React,redux, redux-toolkit, and Tailwind-CSS. It features a user-friendly interface with essential components such as a home page, product catalog, shopping cart, and user authentication (login, registration, password management). The platform integrates Stripe for secure payments and includes an admin dashboard for managing roles, and CRUD operations on products, categories, and brands, including image uploads. Users can also leave comments on products, while access levels ensure differentiated user experiences</p>",
         "date_Created": "12 Sep 2022",
         "technologies": "React, React-router, redux-toolkit, Tailwind Css ",
         "role": "React",
@@ -36,10 +12,34 @@
         "link_Name": "Graduation-Ecommerce"
     },
     {
+        "category": "html-css bootstrap",
+        "img": "img/portfolio/Cover-portfolio-Gemy.png",
+        "title": "Portfolio website",
+        "description": "<p>This portfolio website is designed for an Android developer, featuring a fully responsive in all devices. The site includes customizable settings, such as an option to adjust the font size throughout the website, catering to individual user preferences. Enhanced with various animations. Also It’s Built using HTML, CSS, and JavaScript, Bootstrap for responsive design and FormSpree for efficient form handling.</p>",
+        "date_Created": "12 Sep 2022",
+        "technologies": "Html, Css, Javascript, Bootstrap, FormSpree",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/gemy-portfolio/",
+        "code": "https://github.com/AhmedFarag18/gemy-portfolio/",
+        "link_Name": "Gamal-portfolio"
+    },
+    {
+        "category": "html-css",
+        "img": "img/portfolio/Cover-courses-landingpage.png",
+        "title": "courses landing page",
+        "description": "<p>This template is designed to display courses and highlight the offerings of a course center. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML and CSS, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
+        "date_Created": "4 Dec 2020",
+        "technologies": "Html, Css",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/courses-website/",
+        "code": "https://github.com/AhmedFarag18/courses-website",
+        "link_Name": "courses-website"
+    },
+    {
         "category": "bootstrap",
-        "img": "img/portfolio/5.jpg",
+        "img": "img/portfolio/Cover-restaurant.png",
         "title": "Restaurant website",
-        "description": "<p>This is Restaurant Landing page For Show some products and features for The Restaurant, It's Fully responsive Website.</p>",
+        "description": "<p>A fully responsive landing page for a restaurant, responsive for all devices. Utilizes HTML, CSS, and JavaScript, with jQuery and Bootstrap for enhanced styling and responsiveness. Features include a countdown timer for events, AOS for smooth section animations, and Owl Carousel for an interactive image slider.</p>",
         "date_Created": "21 Dec 2020",
         "technologies": "Html, Css, Javascript, Jquery, Bootstrap",
         "role": "Bootstrap",
@@ -48,9 +48,21 @@
         "link_Name": "BrazilianFood"
     },
     {
+        "category": "html-css",
+        "img": "img/portfolio/Cover-agancy-arabic.png",
+        "title": "Agency Landing page",
+        "description": "<p>This template is designed to display Agency website. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML, CSS and Javascript, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
+        "date_Created": "15 Feb 2021",
+        "technologies": "Html, Css, Javascript",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/Agency-ar/",
+        "code": "https://github.com/AhmedFarag18/Agency-ar",
+        "link_Name": "Agency-ar"
+    },
+    {
         "category": "challenges,api",
-        "img": "img/portfolio/10.jpg",
-        "title": "Rest Countries API",
+        "img": "img/portfolio/Cover-Countries-API.png",
+        "title": "Countries API Challenge",
         "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a rest countries api with color theme switcher</p>",
         "date_Created": "6 Feb 2022",
         "technologies": "Html, Css, Javascript, scss, API",
@@ -60,10 +72,34 @@
         "link_Name": "Rest Countries"
     },
     {
+        "category": "html-css,bootstrap",
+        "img": "img/portfolio/Cover-App-landing-page.png",
+        "title": "App Landing Page",
+        "description": "<p>This Landing page is designed to display App Details and features of Application. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML, CSS, Javascript, and Use Bootstrap 4, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
+        "date_Created": "24 Mar 2021",
+        "technologies": "Html, Css, Bootstrap 4",
+        "role": "Bootstrap",
+        "live": "https://ahmedfarag18.github.io/App-Landing-page/",
+        "code": "https://github.com/AhmedFarag18/App-Landing-page",
+        "link_Name": "App-Landing-page"
+    },
+    {
         "category": "html-css",
-        "img": "img/portfolio/2.jpg",
+        "img": "img/portfolio/Cover-rocker-furniture.png",
+        "title": "Rocker Furniture Website",
+        "description": "<p>This Landing page is designed to display Rocker Furniture landing page and Add to cart. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML, CSS, and Javascript, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
+        "date_Created": "6 Feb 2022",
+        "technologies": "Html, Css, Javascript",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/furniture",
+        "code": "https://github.com/AhmedFarag18/furniture",
+        "link_Name": "furniture"
+    },
+    {
+        "category": "html-css",
+        "img": "img/portfolio/Cover-Construction-website.png",
         "title": "Construction website",
-        "description": "<p>This is a website for a construction company, Website have 5 pages and Its fully Responsive.</p>",
+        "description": "<p>This Construction website is designed to display 5 pages for construction company and All details. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML, CSS, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
         "date_Created": "12 Oct 2020",
         "technologies": "Html, Css, Javascript",
         "role": "html-css",
@@ -82,65 +118,5 @@
         "live": "https://ahmedfarag18.github.io/weather.api/",
         "code": "https://github.com/AhmedFarag18/weather.api",
         "link_Name": "Weather"
-    },
-    {
-        "category": "html-css",
-        "img": "img/portfolio/06.jpg",
-        "title": "Furniture landing page",
-        "description": "<p>This is a furniture landing page preview some products. It's fully responsive in all devices I made ite by using only Html & Css and using javascript to add to cart functionality.</p>",
-        "date_Created": "6 Feb 2022",
-        "technologies": "Html, Css, Javascript",
-        "role": "html-css",
-        "live": "https://ahmedfarag18.github.io/furniture",
-        "code": "https://github.com/AhmedFarag18/furniture",
-        "link_Name": "furniture"
-    },
-    {
-        "category": "html-css,bootstrap",
-        "img": "img/portfolio/4.jpg",
-        "title": "App Landing Page",
-        "description": "<p>This is landing page for new App can show Feature of This App, It's maked by Bootstrap and It's Fully Responsive.</p>",
-        "date_Created": "24 Mar 2021",
-        "technologies": "Html, Css, Bootstrap 4",
-        "role": "Bootstrap",
-        "live": "https://ahmedfarag18.github.io/App-Landing-page/",
-        "code": "https://github.com/AhmedFarag18/App-Landing-page",
-        "link_Name": "App-Landing-page"
-    },
-    {
-        "category": "html-css",
-        "img": "img/portfolio/7.jpg",
-        "title": "Agency Landing page",
-        "description": "<p>This is Arabic Landing Page For Agency, and Its fully Responsive.</p>",
-        "date_Created": "15 Feb 2021",
-        "technologies": "Html, Css, Javascript",
-        "role": "html-css",
-        "live": "https://ahmedfarag18.github.io/Agency-ar/",
-        "code": "https://github.com/AhmedFarag18/Agency-ar",
-        "link_Name": "Agency-ar"
-    },
-    {
-        "category": "html-css,challenges",
-        "img": "img/portfolio/8.jpg",
-        "title": "Sunnyside landing page",
-        "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a Sunnyside Landing page and It's fully responsive.</p>",
-        "date_Created": "22 Jan 2022",
-        "technologies": "Html, Css, Javascript",
-        "role": "Challenges",
-        "live": "https://ahmedfarag18.github.io/Sunnyside/",
-        "code": "https://github.com/AhmedFarag18/Sunnyside",
-        "link_Name": "Sunnyside"
-    },
-    {
-        "category": "react",
-        "img": "img/portfolio/9.jpg",
-        "title": "Ultra React Profile",
-        "description": "<p>This is simple profile React JS. This profile for training react router and styled components It's fully responsive.</p>",
-        "date_Created": "12 Jun 2022",
-        "technologies": "React, React-router, Styled-components",
-        "role": "React",
-        "live": "https://ultra-react-profile.vercel.app/",
-        "code": "https://github.com/AhmedFarag18/Ultra-React-Profile",
-        "link_Name": "React Profile"
     }
 ]
