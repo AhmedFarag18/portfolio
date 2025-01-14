@@ -56,6 +56,7 @@ body.hide-scrolling {
 
 a {
   text-decoration: none;
+  color: var(--light-white)
 }
 
 img {
@@ -1573,9 +1574,10 @@ Contact Section
   margin-bottom: 10px;
 }
 
-.contact-info-item p {
+.contact-info-item .email {
   font-size: 24px;
   font-weight: 600;
+  color: var(--white-light);
 }
 
 .contact-info-item .social-links span {

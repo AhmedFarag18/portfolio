@@ -12,6 +12,18 @@
         "link_Name": "Nova-Ecommerce"
     },
     {
+        "category": "react",
+        "img": "img/portfolio/nike-landing-page.png",
+        "title": "Nike Landing Page",
+        "description": "<p>A fully responsive and interactive landing page for showcasing Nike's latest collection. Built with React.js and Tailwind CSS, this project emphasizes modern design, smooth performance, and scalability.</p>",
+        "date_Created": "5 Jan 2025",
+        "technologies": "React, Tailwind Css, Responsive Design",
+        "role": "React",
+        "live": "https://ahmedfarag18.github.io/nike-landing-page/",
+        "code": "https://github.com/AhmedFarag18/nike-landing-page",
+        "link_Name": "Nova-nike-landing-page"
+    },
+    {
         "category": "html-css bootstrap",
         "img": "img/portfolio/portfolio-gemy.png",
         "title": "Portfolio website",
@@ -63,7 +75,7 @@
         "category": "challenges,api",
         "img": "img/portfolio/countries-api.png",
         "title": "Countries API Challenge",
-        "description": "<p>This is my solutaion of the challenge. This is challenge in frontend mentor website it is a rest countries api with color theme switcher</p>",
+        "description": "<p>This Challenge is designed to display Countries Api. It features a fully responsive design, ensuring an optimal viewing experience across all devices. Developed using HTML, CSS, Javascript, and Use API, the template utilizes media queries to adapt its layout and style for various screen sizes, making it accessible and user-friendly on both desktop and mobile devices.</p>",
         "date_Created": "6 Feb 2022",
         "technologies": "Html, Css, Javascript, scss, API",
         "role": "Challenges",
