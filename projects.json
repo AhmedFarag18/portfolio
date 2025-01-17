@@ -121,7 +121,7 @@
     },
     {
         "category": "api",
-        "img": "img/portfolio/3.jpg",
+        "img": "img/portfolio/weather-app.jpg",
         "title": "Weather App",
         "description": "<p>This is Weather App show weather for 3 days in the Place you Need, and it's Fully Responsive.</p>",
         "date_Created": "9 Mar 2021",
