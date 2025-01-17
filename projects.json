@@ -72,6 +72,18 @@
         "link_Name": "Agency-ar"
     },
     {
+        "category": "html-css",
+        "img": "img/portfolio/blooger-page.webp",
+        "title": "Agency Landing page",
+        "description": "<p>This Template is built using HTML, CSS, and JavaScript, with additional functionality provided by jQuery, Owl Carousel for interactive elements, and AOS for animations. The design is fully responsive, ensuring a seamless user experience across all devices.</p>",
+        "date_Created": "18 Apr 2021",
+        "technologies": "Html, Css, Javascript, jQuery, +Other Libraries",
+        "role": "html-css",
+        "live": "https://ahmedfarag18.github.io/Blooger/",
+        "code": "https://github.com/AhmedFarag18/Blooger",
+        "link_Name": "Blooger"
+    },
+    {
         "category": "challenges,api",
         "img": "img/portfolio/countries-api.webp",
         "title": "Countries API Challenge",
