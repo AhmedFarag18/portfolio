@@ -1,6 +1,5 @@
 let portfolioItems;
 
-
 window.addEventListener("load", () => {
     /*-----------------  Page Loader ----------------*/
     document.querySelector(".page-loader").classList.add("slide-out-right");
@@ -8,7 +7,6 @@ window.addEventListener("load", () => {
         document.querySelector(".page-loader").style.display = "none";
     }, 1000);
 });
-
 
 /*======================= Bg Animation Effect ===========*/
 function bgAnimationItems() {
@@ -23,9 +21,6 @@ function bgAnimationItems() {
     }
 }
 bgAnimationItems();
-
-
-
 
 /*================= Toggle Navbar ================*/
 const navToggler = document.querySelector(".nav-toggler");
@@ -50,10 +45,7 @@ btnCloseen.addEventListener("click", () => {
     profileImg.classList.remove("show");
 });
 
-
-
 /*===============  Hide  & show Section  ==================*/
-
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("link-item") && e.target.hash !== "") {
         const hash = e.target.hash;
@@ -81,13 +73,10 @@ function activeSection(sectionId) {
     window.scrollTo(0, 0);
 }
 
-
 /* ============= Toggle Overlay Effect =======================*/
 function toggleOverlayEffect() {
     document.querySelector(".overlay-effect").classList.toggle("active");
 }
-
-
 /* ============= Toggle Body Scrolling =======================*/
 function toggleBodyScrolling() {
     document.body.classList.toggle("hide-scrolling");
@@ -95,7 +84,6 @@ function toggleBodyScrolling() {
 
 /* ============= Filter Portfolio Items =======================*/
 const filterBtnsContainer = document.querySelector(".portfolio-filter");
-
 filterBtnsContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("portfolio-filter-btn") && !e.target.classList.contains("active")) {
         filterBtnsContainer.querySelector(".active").classList.remove("active");
@@ -113,7 +101,6 @@ filterBtnsContainer.addEventListener("click", (e) => {
     }
 });
 
-
 /*=============== Filter Items when click category Buttons =================*/
 function filterItems(filterBtn) {
     const selectedCategory = filterBtn.getAttribute("data-filter");
@@ -128,14 +115,10 @@ function filterItems(filterBtn) {
     portfolioItems = document.querySelectorAll(".portfolio-item.show");
 }
 
-
 // filter active category Portfolio Items
 filterItems(document.querySelector(".portfolio-filter-btn.active"));
-
-
 /* ============= Portfolio Item Details Popup ====================*/
 let portfolioItemIndex;
-
 document.addEventListener("click", (e) => {
     if (e.target.closest(".portfolio-item")) {
         const currentItem = e.target.closest(".portfolio-item");
@@ -153,18 +136,13 @@ function togglePopup() {
 }
 document.querySelector(".pp-close-btn").addEventListener("click", togglePopup);
 
-
 /*===============  Add details when click in one of items ===================*/
-
 function portfolioItemDetails() {
-
     document.querySelector(".pp-thumbnail img").src = portfolioItems[portfolioItemIndex].querySelector("img").src;
     document.querySelector(".pp-header h3").innerHTML = portfolioItems[portfolioItemIndex].querySelector(".portfolio-item-title").innerHTML;
     document.querySelector(".pp-body").innerHTML = portfolioItems[portfolioItemIndex].querySelector(".portfolio-item-details").innerHTML;
     document.querySelector(".pp-counter").innerHTML = `${portfolioItemIndex + 1} of ${portfolioItems.length} ( <span title="category">${document.querySelector(".portfolio-filter-btn.active").innerHTML}</span>)`;
 }
-
-
 
 function updateNextPrevItem() {
     if (portfolioItemIndex !== 0) {
@@ -201,7 +179,6 @@ function changePortfolioItem(direction) {
     } else {
         portfolioItemIndex++;
     }
-
     document.querySelector(".pp-overlay").classList.add(direction);
 
     setTimeout(() => {
@@ -214,17 +191,13 @@ function changePortfolioItem(direction) {
     }, 1000);
 }
 
-
 /*=============== Toggle Contact Form ===================*/
-
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("toggle-contact-form-btn")) {
         document.querySelector(".contact-form").classList.toggle("open");
         toggleBodyScrolling();
     }
 });
-
-
 
 /*======================= Cursor Effect ===========*/
 let cursor1 = document.querySelector(".cursor1");
@@ -233,10 +206,8 @@ let cursor2 = document.querySelector(".cursor2");
 document.addEventListener("mousemove", function (e) {
     let mainCursor = document.querySelector(".cursor_parent");
     mainCursor.style.display = "block";
-
     cursor1.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px";
 });
-
 
 let anchor = document.querySelectorAll("a");
 anchor.forEach(item => {
@@ -289,42 +260,9 @@ if (window.localStorage.getItem("portfolio-color")) {
     document.querySelector(`[data-color="${window.localStorage.getItem("portfolio-color")}"]`).classList.add("active");
 }
 
-
-/*======================== Make Glass Effect ======================================*/
-let glassCheckbox = document.querySelector(".glass-toggle");
-let glassStyle = document.querySelector(".js-glass-style");
-
-glassCheckbox.addEventListener("click", () => {
-    if (glassCheckbox.classList.contains("active")) {
-        glassCheckbox.classList.remove("active");
-        localStorage.setItem("glass-effect", "false");
-        glassStyle.disabled = true;
-    } else {
-        glassCheckbox.classList.add("active");
-        localStorage.setItem("glass-effect", "true");
-        glassStyle.disabled = false;
-    }
-});
-
-
-// check if glass checked in localstorage
-if (localStorage.getItem("glass-effect") !== null) {
-    if (localStorage.getItem("glass-effect") === "true") {
-
-        glassCheckbox.classList.add("active");
-        glassStyle.disabled = false;
-        localStorage.setItem("glass-effect", "true");
-    } else {
-        glassCheckbox.classList.remove("active");
-        glassStyle.disabled = true;
-        localStorage.setItem("glass-effect", "false");
-    }
-}
-
 /*=====================================
 light & Dark mode 
 ======================================*/
-
 let lightCheckbox = document.querySelector(".light-toggle");
 let lightStyle = document.querySelector(".js-light-style");
 
@@ -342,9 +280,6 @@ lightCheckbox.addEventListener("click", function () {
     }
 });
 
-
-
-
 // check if light checked in localstorage
 if (localStorage.getItem("light-effect") !== null) {
     if (localStorage.getItem("light-effect") === "true") {
@@ -359,7 +294,6 @@ if (localStorage.getItem("light-effect") !== null) {
 }
 
 /*---------------- Show All Projects And Add Data From Json File ---------------------*/
-
 function showProjects(data) {
     document.querySelector(".portfolio-items").innerHTML = "";
     for (let i = 0; i < data.length; i++) {
@@ -440,7 +374,6 @@ async function handleSubmit(event) {
 
 // when clcik the form button
 form.addEventListener("submit", handleSubmit);
-
 
 // function for success and field when submit
 function faildSubmit() {
